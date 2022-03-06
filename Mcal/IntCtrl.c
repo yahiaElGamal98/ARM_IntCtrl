@@ -38,6 +38,9 @@ extern const uint8 tick_pri;
 #define SPOT_B 1
 #define SPOT_C 2
 #define SPOT_D 3
+#define VECTKEY_OFFSET 16
+#define PRIGROUP_OFFSET 8
+#define VECTKEY_VAL 0x05FA 
 /**********************************************************************************************************************
  *  LOCAL DATA 
  *********************************************************************************************************************/
@@ -76,8 +79,7 @@ void IntCrtl_Init(void)
 	uint8 u8_index;
 
 	/*TODO Configure Grouping\SubGrouping System in APINT register in SCB*/
-    (APINT->B.VECTKEY) = 0x05FA;
-    (APINT->B.PRIGROUP)=prigroupVal;
+    (APINT->R) |= (VECTKEY_VAL<<VECTKEY_OFFSET)|(prigroupVal<<PRIGROUP_OFFSET);
     /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/  
 	
 	SYSPRI1->B.MEM=mem_pri;
