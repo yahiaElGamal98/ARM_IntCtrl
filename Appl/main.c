@@ -1,6 +1,7 @@
 
+#include"../Mcal/Inc/IntCtrl.h"
 
 int main(){
-	int counter=0;
-	counter++;
-	return 0;}
+   IntCrtl_Init();
+	return 0;
+}

@@ -76,7 +76,7 @@ void IntCrtl_Init(void)
 	uint8 u8_index;
 
 	/*TODO Configure Grouping\SubGrouping System in APINT register in SCB*/
-    (APINT->B.VECTKEY) = 0xFA05;
+    (APINT->B.VECTKEY) = 0x05FA;
     (APINT->B.PRIGROUP)=prigroupVal;
     /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/  
 	

@@ -127,13 +127,13 @@ typedef enum
 
 typedef struct
 {
-		IntCtrl_InterruptType name;
-		uint8 status:1;
+   IntCtrl_InterruptType name;
+   uint8 status   :1;
 }IntCtrl_InterruptStatus;
 
 typedef struct{
 	IntCtrl_InterruptType name;
-	uint8 prigroupVal :3;
+	uint8 prigroupVal   :3;
 }IntCtrl_PRIGROUP_type;
 
 
