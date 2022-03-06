@@ -20,7 +20,7 @@
 *  LOCAL MACROS CONSTANT\FUNCTION
 *********************************************************************************************************************/
 /***********************************************************************************************************************
-*														EXCEPTIONS & FAULTS PRIOIRITY SETTINGS                                      *
+*                                         EXCEPTIONS & FAULTS PRIOIRITY SETTINGS                                      *
 *                                      CHOOSE A VALUE FROM 0 -> 7 in the following                                    *
 ***********************************************************************************************************************/
 #define MEM_PRIORITY        0
@@ -128,7 +128,7 @@ const IntCtrl_PRIGROUP_type ST_arr_PRIGROUPCfg[INTERRUPT_ARR_SIZE]={
 #elif PRIGROUP_CONFIG_2
 const uint8 prigroupVal=5;
 const IntCtrl_PRIGROUP_type ST_arr_PRIGROUPCfg[INTERRUPT_ARR_SIZE]={
-   {INTCTRL_GPIO_PORTA													,((0)+(0))},  //(GROUP NUM 0-> 3)+(SUBGROUP NUM 0->1)
+   {INTCTRL_GPIO_PORTA                                      ,((0)+(0))},  //(GROUP NUM 0-> 3)+(SUBGROUP NUM 0->1)
    {INTCTRL_GPIO_PORTB                                      ,((0)+(0))},
    {INTCTRL_GPIO_PORTC                                      ,((0)+(0))},
    {INTCTRL_GPIO_PORTD                                      ,((0)+(0))},
@@ -292,7 +292,7 @@ const IntCtrl_PRIGROUP_type ST_arr_PRIGROUPCfg[INTERRUPT_ARR_SIZE]={
 #elif PRIGROUP_CONFIG_4
 const uint8 prigroupVal=7;
 const IntCtrl_PRIGROUP_type ST_arr_PRIGROUPCfg[INTERRUPT_ARR_SIZE]={
-   {INTCTRL_GPIO_PORTA													,((0))}, //(SUBGROUP NUM 0->7)
+   {INTCTRL_GPIO_PORTA                                      ,((0))}, //(SUBGROUP NUM 0->7)
    {INTCTRL_GPIO_PORTB                                      ,((0))},
    {INTCTRL_GPIO_PORTC                                      ,((0))},
    {INTCTRL_GPIO_PORTD                                      ,((0))},
